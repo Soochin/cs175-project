@@ -21,6 +21,8 @@ class HandClassifyDataset(torch.utils.data.Dataset):
         i+= 1
         if i%1000 == 0:
           print(i)
+          break
+          
       print('Batch done')
       break
     print('Hands done')
@@ -30,6 +32,7 @@ class HandClassifyDataset(torch.utils.data.Dataset):
         i += 1
         if i%1000 == 0:
           print(i)
+          break
       print("Batch done")
       break
     print("No Hands done")
